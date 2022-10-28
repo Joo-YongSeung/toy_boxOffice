@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019464749578",
+    "project_id": "boxoffice-c514e",
+    "storage_bucket": "boxoffice-c514e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019464749578:android:c6aa9b0372d881dc8645f3",
+        "android_client_info": {
+          "package_name": "com.greedy.boxoffice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019464749578-rf13ednvmgunjgmqblursvedodsn6fdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSsvtUtqFtm2x7EAt0lUi4Xrh6G8hVcXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019464749578-rf13ednvmgunjgmqblursvedodsn6fdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
