@@ -8,15 +8,15 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.greedy.boxoffice.databinding.ActivityMainBinding
+import com.greedy.boxoffice.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
 
         auth = Firebase.auth
 
@@ -69,4 +69,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, ResultActivity::class.java))
         finish()
     }
+
+        binding.testbts.setOnClickListener {
+            val intent = Intent(this, moviedetail::class.java)
+            startActivity(intent)
+
+            MoviesRepository.getPopularMovies()
+        } }
+
 }
