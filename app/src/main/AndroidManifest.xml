@@ -22,6 +22,9 @@
                 android:name=".reviewmake"
                 android:exported="false"/>
         <activity
+                android:name=".JoinActivity"
+                android:exported="false"/>
+        <activity
                 android:name=".ResultActivity"
                 android:exported="false"/>
         <activity

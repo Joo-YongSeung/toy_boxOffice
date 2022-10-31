@@ -18,8 +18,11 @@ object MoviesRepository {
 
         api = retrofit.create(Api::class.java)
     }
+    // init 블록을 사용하여 Retrofit 인스턴스를 초기화
+    // 그런 다음 Retrofit 인스턴스를 사용하여 Api 인스턴스를 초기화
 
-    fun getPopularMovies(page: Int = 1) {
+
+    fun getPopularMovies(page: Int = 1) { // 기본값 페이지를 1로 설정
         api.getPopularMovies(page = page)
             .enqueue(object : Callback<GetMoviesResponse> {
                 override fun onResponse(

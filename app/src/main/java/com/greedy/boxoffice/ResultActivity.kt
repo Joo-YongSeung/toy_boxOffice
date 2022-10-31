@@ -3,7 +3,6 @@ package com.greedy.boxoffice
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,12 +32,12 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        binding.reviewbtn.setOnClickListener {
+            val intent = Intent(this, reviewmake::class.java)
+            startActivity(intent)
+        }
 
-        /*  binding.testbts.setOnClickListener {
-            val intent = Intent(this, moviedetail2::class.java)
-            startActivity(intent)*/
-
-       /* var auth = Firebase.auth
+        var auth = Firebase.auth
 
         //* 로그아웃 *//
         binding.logout.setOnClickListener {
@@ -48,7 +47,7 @@ class ResultActivity : AppCompatActivity() {
             startActivity(intent)
 
             auth.signOut()
-        } */
+        }
 
         popularMovies = findViewById(R.id.popular_movies)
         popularMoviesLayoutMgr = LinearLayoutManager(
