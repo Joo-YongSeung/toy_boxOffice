@@ -8,7 +8,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.greedy.boxoffice.databinding.ActivityMainBinding
-import com.greedy.boxoffice.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -70,11 +69,5 @@ class MainActivity : AppCompatActivity() {
         finish()
     }
 
-        binding.testbts.setOnClickListener {
-            val intent = Intent(this, moviedetail::class.java)
-            startActivity(intent)
-
-            MoviesRepository.getPopularMovies()
-        } }
 
 }

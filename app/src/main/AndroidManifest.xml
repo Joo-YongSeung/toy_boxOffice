@@ -3,7 +3,7 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.greedy.boxoffice">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:allowBackup="true"
@@ -16,10 +16,13 @@
             android:theme="@style/Theme.BoxOffice"
             tools:targetApi="31">
         <activity
+                android:name=".MovieDetailsActivity"
+                android:exported="false"/>
+        <activity
                 android:name=".reviewmake"
                 android:exported="false"/>
         <activity
-                android:name=".moviedetail"
+                android:name=".ResultActivity"
                 android:exported="false"/>
         <activity
                 android:name=".MainActivity"
