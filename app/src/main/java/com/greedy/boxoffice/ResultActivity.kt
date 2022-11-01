@@ -32,8 +32,8 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.reviewbtn.setOnClickListener {
-            val intent = Intent(this, reviewmake::class.java)
+        binding.memowbtn.setOnClickListener {
+            val intent = Intent(this, MemoActivity::class.java)
             startActivity(intent)
         }
 

@@ -1,13 +1,13 @@
 package com.greedy.boxoffice
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.greedy.boxoffice.databinding.ActivityReviewmakeBinding
+import com.greedy.boxoffice.databinding.ActivityMemoBinding
 
-class reviewmake : AppCompatActivity() {
+class MemoActivity : AppCompatActivity() {
 
-    val binding by lazy { ActivityReviewmakeBinding.inflate(layoutInflater) }
+    val binding by lazy { ActivityMemoBinding.inflate(layoutInflater) }
     val helper = SqliteHelper(this, "memo", 1)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class reviewmake : AppCompatActivity() {
         binding.saveButton.setOnClickListener {
             /* 메모 내용이 입력 된 경우만 동작 */
             if(binding.editMemo.text.toString().isNotEmpty()) {
-                val memo = Memo(null, binding.editMemo.text.toString())
+                val memo = Memo(null, binding.editMemo.text.toString(), System.currentTimeMillis())
                 helper.insertMemo(memo)
 
                 /* DB가 변동 되었을 때 화면도 변동될 수 있도록 adapter의 data를 수정하고

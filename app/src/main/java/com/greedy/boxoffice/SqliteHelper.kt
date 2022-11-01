@@ -19,6 +19,7 @@ class SqliteHelper (context: Context, name: String, version: Int) : SQLiteOpenHe
         val create = "create table memo (" +
                 "no integer primary key, " +
                 "content text, " +
+                "datetime integer " +
                 ")"
 
         db?.execSQL(create)
@@ -35,6 +36,7 @@ class SqliteHelper (context: Context, name: String, version: Int) : SQLiteOpenHe
         /* 저장할 데이터를 ContentValues에 key value 방식으로 저장한다. */
         val values = ContentValues()
         values.put("content", memo.content)
+        values.put("datetime", memo.datetime)
 
         /* writableDatabase 속성에 테이블명, 작성한 값을 전달하여 insert한다.
         * 두 번째 인자는 ContentValues가 null일 경우 insert 될 수 없어 한 개라도 컬럼을 지정해줘야 하기
@@ -65,7 +67,8 @@ class SqliteHelper (context: Context, name: String, version: Int) : SQLiteOpenHe
         while(cursor.moveToNext()) {
             val no = cursor.getLong(cursor.getColumnIndex("no"))
             val content = cursor.getString(cursor.getColumnIndex("content"))
-            list.add(Memo(no, content))
+            val datetime = cursor.getLong(cursor.getColumnIndex("datetime"))
+            list.add(Memo(no, content, datetime))
         }
 
         cursor.close()

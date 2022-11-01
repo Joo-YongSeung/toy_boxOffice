@@ -9,12 +9,12 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.greedy.boxoffice.databinding.ActivityMovieDetailsBinding
 
-const val MOVIE_BACKDROP = "extra_movie_backdrop"
-const val MOVIE_POSTER = "extra_movie_poster"
-const val MOVIE_TITLE = "extra_movie_title"
-const val MOVIE_RATING = "extra_movie_rating"
-const val MOVIE_RELEASE_DATE = "extra_movie_release_date"
-const val MOVIE_OVERVIEW = "extra_movie_overview"
+const val MOVIE_BACKDROP = "movie_backdrop"
+const val MOVIE_POSTER = "movie_poster"
+const val MOVIE_TITLE = "movie_title"
+const val MOVIE_RATING = "movie_rating"
+const val MOVIE_RELEASE_DATE = "movie_release_date"
+const val MOVIE_OVERVIEW = "movie_overview"
 
 class MovieDetailsActivity : AppCompatActivity() {
 

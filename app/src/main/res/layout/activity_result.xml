@@ -23,9 +23,10 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/logout"/>
         <Button
-                android:text="리뷰 남기기"
+                android:text="메모 남기기"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/reviewbtn"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/memowbtn"/>
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
