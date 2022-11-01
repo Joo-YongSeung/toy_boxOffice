@@ -16,13 +16,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/logout" android:gravity="right"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
             <Button
                     android:text="메모 남기기"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/memowbtn" android:gravity="center_horizontal"/>
+                    android:id="@+id/memowbtn" android:gravity="center_horizontal"
+                    android:layout_marginEnd="64dp" android:layout_toStartOf="@+id/button"/>
+            <Button
+                    android:text="영화 상세보기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button"
+                    android:layout_marginEnd="54dp" android:layout_alignParentEnd="true"/>
         </RelativeLayout>
-
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
