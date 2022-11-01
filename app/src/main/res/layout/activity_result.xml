@@ -7,26 +7,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <!--     <TextView
-                android:text="로그아웃"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/logout"
-                android:layout_constraintStart_toStartOf="parent"
-                android:layout_constraintEnd_toEndOf="parent"
-                android:layout_constraintTop_toTopOf="parent"
-                android:layout_constraintHorizontal_bias="0.955"
-                android:layout_constraintBottom_toBottomOf="parent"
-                android:layout_constraintVertical_bias="0.022"/>-->
-        <TextView
-                android:text="로그아웃"
+        <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/logout"/>
-        <Button
-                android:text="메모 남기기"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/memowbtn"/>
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="로그아웃"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logout" android:gravity="right"/>
+            <Button
+                    android:text="메모 남기기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/memowbtn" android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,13 +33,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
-
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/most_popular_movies"/>
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/popular_movies"
@@ -64,12 +53,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/highest_rated_movies"/>
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/top_rated_movies"
@@ -91,12 +74,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/stay_updated"/>
 
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/upcoming_movies"
