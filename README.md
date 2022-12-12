@@ -1,4 +1,5 @@
 # 
+![logo](https://user-images.githubusercontent.com/109030338/206969510-e2d7fef1-a8d2-47b9-924d-5f2a4685816f.png)
 
 최신 영화부터 오래된 고전 영화까지 영화에 대한 모든 정보가 담겨있는 '박스오피스'
 
